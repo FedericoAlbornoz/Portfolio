@@ -13,24 +13,32 @@
 }
 
 .header nav {
+  opacity: 0.85;
   background-color: #004173 !important;
-  -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.2);
-  opacity: 0.64;
 }
 
-.header nav .container-fluid .collapse .navbar-nav .nav-item a {
+.header nav .container-fluid .collapse .navbar-nav a {
   text-decoration: none;
   margin: 0px 20px 0px 20px;
-  color: #ffffff;
+  color: #cff4ff;
 }
 
 body {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#013964), to(#148bc7));
   background-image: linear-gradient(to top, #013964, #148bc7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-section {
+body section {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 800px 800px;
@@ -41,10 +49,10 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 130px;
+  padding: 100px 0px;
 }
 
-section img {
+body section img {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -52,11 +60,11 @@ section img {
           box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
 }
 
-section div {
+body section div {
   text-align: center;
 }
 
-section div h1 {
+body section div h1 {
   font-family: 'IBM Plex Sans', sans-serif;
   font-family: 'Mr Dafoe', cursive;
   font-size: 150px;
@@ -64,14 +72,14 @@ section div h1 {
   text-shadow: 0 0 30px #cff4ff;
 }
 
-section div h2 {
+body section div h2 {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 40px;
   color: whitesmoke;
   width: 100%;
 }
 
-.about-me {
+body .about-me {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,25 +99,24 @@ section div h2 {
   padding: 50px;
   -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
           box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
-  margin-left: 15%;
 }
 
-.about-me h3 {
+body .about-me h3 {
   font-weight: bolder;
   font-size: 80px;
   text-shadow: 0 0 30px #0979b0;
 }
 
-.about-me p {
+body .about-me p {
   font-size: 20px;
 }
 
-.about-me img {
+body .about-me img {
   -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
           box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
 }
 
-.portfolio {
+body .portfolio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,7 +131,7 @@ section div h2 {
   padding: 20px;
 }
 
-.portfolio h3 {
+body .portfolio h3 {
   font-weight: bolder;
   font-size: 80px;
   font-family: 'IBM Plex Sans', sans-serif;
@@ -133,7 +140,7 @@ section div h2 {
   text-shadow: 0 0 30px #cff4ff;
 }
 
-.exp h3 {
+body .exp h3 {
   font-weight: bolder;
   font-size: 80px;
   font-family: 'IBM Plex Sans', sans-serif;
@@ -143,7 +150,7 @@ section div h2 {
   text-shadow: 0 0 30px #cff4ff;
 }
 
-.exp .card__exp {
+body .exp .card__exp {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -156,7 +163,7 @@ section div h2 {
   justify-items: center;
 }
 
-.exp .card {
+body .exp .card {
   background-color: #d1f0ff;
   cursor: pointer;
   border-style: none;
@@ -168,12 +175,12 @@ section div h2 {
   width: 80%;
 }
 
-.exp .card:hover {
+body .exp .card:hover {
   -webkit-transform: translateY(-40px);
           transform: translateY(-40px);
 }
 
-.exp .card .card__title {
+body .exp .card .card__title {
   margin: 15px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -186,7 +193,7 @@ section div h2 {
   border-radius: 40%;
 }
 
-.exp .card .card__info {
+body .exp .card .card__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,7 +209,7 @@ section div h2 {
   letter-spacing: 2px;
 }
 
-.educacion {
+body .educacion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,7 +223,7 @@ section div h2 {
   gap: 40px;
 }
 
-.educacion h3 {
+body .educacion h3 {
   font-weight: bolder;
   font-size: 80px;
   font-family: 'IBM Plex Sans', sans-serif;
@@ -226,7 +233,7 @@ section div h2 {
   width: 100%;
 }
 
-.educacion .mb-3 {
+body .educacion .mb-3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -238,7 +245,7 @@ section div h2 {
   z-index: -2;
 }
 
-.contacto {
+body .contacto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,12 +258,11 @@ section div h2 {
   width: 35%;
   margin-top: 100px;
   margin-bottom: 20px;
-  margin-left: 33%;
   -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
           box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
 }
 
-.contacto h3 {
+body .contacto h3 {
   font-weight: bolder;
   font-size: 80px;
   font-family: 'IBM Plex Sans', sans-serif;
@@ -268,19 +274,19 @@ section div h2 {
   text-align: center;
 }
 
-.contacto .contacto__data {
+body .contacto .contacto__data {
   margin-top: 20px;
   width: 100%;
   text-align: center;
 }
 
-.contacto .contacto__data li {
+body .contacto .contacto__data li {
   list-style: none;
   color: #0979b0;
   font-size: 20px;
 }
 
-.contacto .redes {
+body .contacto .redes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,26 +294,255 @@ section div h2 {
   margin-left: 20%;
 }
 
-.contacto .redes li {
+body .contacto .redes li {
   list-style: none;
   display: inline-block;
   margin: 0px 30px;
   width: 50px;
 }
 
-.contacto .redes li a {
+body .contacto .redes li a {
   color: #0979b0;
   font-size: 60px;
   -webkit-transition: .2s;
   transition: .2s;
 }
 
-footer {
+body footer {
   background-color: aliceblue;
   color: #0979b0;
   text-align: end;
   font-weight: 400;
   font-style: italic;
+  width: 100%;
 }
 
 /*-----------------------Media Queries-----------------------*/
+@media (min-width: 1024px) and (max-width: 1440px) {
+  body section {
+    -ms-grid-columns: 400px 400px;
+        grid-template-columns: 400px 400px;
+    gap: 50px;
+  }
+  body section img {
+    width: 100%;
+  }
+  body section div h1 {
+    font-size: 90px;
+  }
+  body section div h2 {
+    font-size: 40px;
+    width: 100%;
+  }
+  body .about-me {
+    width: 85%;
+  }
+  body .exp .card__exp .card {
+    width: 100%;
+  }
+  body .contacto {
+    width: 65%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .header {
+    position: relative;
+  }
+  .header nav {
+    opacity: 2;
+  }
+  body section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body section img {
+    margin-bottom: 50px;
+  }
+  body .about-me {
+    width: 95%;
+  }
+  body .exp .card__exp {
+    padding: 25px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .exp .card__exp .card {
+    width: 80%;
+  }
+  body .contacto {
+    width: 85%;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  body .header nav .container-fluid i {
+    color: #cff4ff;
+    font-size: 50px;
+  }
+  body section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body section img {
+    margin-bottom: 50px;
+    width: 90%;
+  }
+  body section div h1 {
+    font-size: 100px;
+  }
+  body .about-me {
+    width: 95%;
+    padding: 25px;
+  }
+  body .about-me h3 {
+    font-size: 60px;
+  }
+  body .portfolio h3 {
+    font-size: 60px;
+  }
+  body .portfolio iframe {
+    width: 350px;
+    height: 400px;
+  }
+  body .exp h3 {
+    font-size: 60px;
+  }
+  body .exp .card__exp {
+    padding: 25px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .exp .card__exp .card {
+    width: 100%;
+  }
+  body .educacion h3 {
+    font-size: 60px;
+  }
+  body .contacto {
+    width: 95%;
+  }
+  body .contacto h3 {
+    font-size: 60px;
+  }
+  body .contacto .redes {
+    margin-left: 0%;
+  }
+  body footer {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+  body section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body section img {
+    margin-bottom: 50px;
+    width: 90%;
+  }
+  body section div h1 {
+    font-size: 100px;
+  }
+  body .about-me {
+    width: 95%;
+    padding: 25px;
+  }
+  body .about-me h3 {
+    font-size: 50px;
+  }
+  body .about-me img {
+    width: 90%;
+  }
+  body .portfolio h3 {
+    font-size: 50px;
+  }
+  body .portfolio iframe {
+    width: 300px;
+    height: 400px;
+  }
+  body .exp h3 {
+    font-size: 50px;
+  }
+  body .exp .card__exp {
+    padding: 25px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .exp .card__exp .card {
+    width: 100%;
+  }
+  body .educacion h3 {
+    font-size: 50px;
+  }
+  body .educacion .mb-3 {
+    width: 90%;
+  }
+  body .contacto {
+    width: 95%;
+  }
+  body .contacto h3 {
+    font-size: 50px;
+  }
+  body .contacto .contacto__data {
+    text-align: start;
+  }
+  body .contacto .contacto__data li {
+    font-size: 13px;
+  }
+  body .contacto .redes {
+    margin-left: 0%;
+  }
+  body .contacto .redes li a {
+    font-size: 40px;
+  }
+  body footer {
+    font-size: 10px;
+  }
+}
