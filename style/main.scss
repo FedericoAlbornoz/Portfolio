@@ -19,7 +19,7 @@
                 .navbar-nav {
                     a {
                         text-decoration: none;
-                        margin: 0px 20px 0px 20px;
+                        margin: 0px 20px;
                         color: #cff4ff;
                     }
                 }
@@ -35,12 +35,12 @@ body {
     align-items: center;
     
     section {
-    display: grid;
-    grid-template-columns: 800px 800px;
-    grid-template-rows: 1fr;
-    justify-items: center;
-    align-items: center;
-    padding: 100px 0px;
+        display: grid;
+        grid-template-columns: 800px 800px;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+        padding: 100px 0px;
 
         img {
             grid-column: 1/2;
@@ -68,14 +68,14 @@ body {
 
     .about-me {
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
         color: #004173 ;
         width: 70%;
         font-family: 'IBM Plex Sans', sans-serif;
         font-weight: 700;
-        text-align: justify;
-        text-indent: 30px;
         letter-spacing: 2px;
         background-color: #cff4ff;
         padding: 50px;
@@ -85,17 +85,20 @@ body {
             font-weight: bolder;
             font-size: 80px;
             text-shadow: 0 0 30px #0979b0;
+            text-align: center;
         }
 
         p {
             font-size: 20px; 
+            text-align: justify;
+            text-indent: 30px;        
         }
         
         img {
             box-shadow: 0 5px 15px 0px rgba(0,0,0,0.8);
         }
     }
-
+    
     .portfolio {
         display: flex;
         flex-direction: column;
@@ -110,6 +113,17 @@ body {
             color: whitesmoke;
             margin-bottom: 20px;
             text-shadow: 0 0 30px #cff4ff;
+        }
+
+        iframe {
+            margin-bottom: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 40px;
+            font-family: 'IBM Plex Sans', sans-serif;
+            color: #d1f0ff;
         }
     }
 
@@ -439,6 +453,17 @@ body {
 @media (min-width: 375px) and (max-width: 424px) {
 
     body {
+        .header {
+            nav {
+                .container-fluid {
+                    i {
+                        color: #cff4ff;
+                        font-size: 50px;
+                    }
+                }
+            }
+        }
+
         section {
             display: flex;
             flex-direction: column;
