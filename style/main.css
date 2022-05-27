@@ -192,11 +192,9 @@ body .exp .card {
           box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
   font-family: 'IBM Plex Sans', sans-serif;
   width: 80%;
-}
-
-body .exp .card:hover {
-  -webkit-transform: translateY(-40px);
-          transform: translateY(-40px);
+  /*&:hover {
+                transform: translateY(-40px);
+            }*/
 }
 
 body .exp .card .card__title {
