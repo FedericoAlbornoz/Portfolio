@@ -79,6 +79,19 @@ body section div h2 {
   width: 100%;
 }
 
+body section div .cv {
+  margin-top: 8%;
+}
+
+body section div .cv a {
+  border: #cff4ff;
+  background-color: #004173;
+  color: #d1f0ff;
+  padding: 5px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
 body .about-me {
   display: -webkit-box;
   display: -ms-flexbox;
